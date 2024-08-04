@@ -1,0 +1,8 @@
+version: 1
+services:
+  - type: web
+    name: nombre-de-tu-servicio
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run src/app.py
